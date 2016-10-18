@@ -1,12 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import DriveDrink from './DriveDrink'
 
 const app = function() {
 
 	const Header = React.createClass({
-		render: () => {
-			return <h1>YOLO</h1>
-		}
+		render: function(){
+			return(
+                  <div>
+                    <DriveDrink />
+		          </div>
+            )
+        }
 	})
 
 	ReactDOM.render(<Header/>,document.querySelector('.container'))
