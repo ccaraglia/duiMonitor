@@ -170,7 +170,7 @@ reset: function(e){
                 <div>
                                     <p id="alcohol"> Your alcohol % is {this.alcohol.toFixed(3)}</p>
 
-                                    <p id="waitP" style={pStyle}>WAIT {parseInt((this.alcohol - 0.08) / 0.015)} hour(s) </p>
+                                    <p id="waitP" style={pStyle}>WAIT {Math.ceil((this.alcohol - 0.08) / 0.015)} hour(s) </p>
                 </div>
                 </div>
 
