@@ -114,7 +114,7 @@ reset: function(e){
                 this.alcohol = 100 * 0.05 / this.state.weight * this.state.totalDrinks - 0.015 * this.state.hours
             }
 
-            if (this.alcohol > 0.08){
+            if (this.alcohol >= 0.08){
                     this.state.color = 'red'
                     console.log(parseInt((this.alcohol - 0.08) / 0.015))
 
